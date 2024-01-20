@@ -1,3 +1,4 @@
+<h1>PatientGuard Landing Page</h1>
 # Astro Starter Kit: Basics
 
 ```sh
