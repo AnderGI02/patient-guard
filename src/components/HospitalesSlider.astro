@@ -1,0 +1,60 @@
+---
+interface Props {
+  snapPosition: string;
+}
+const { snapPosition } = Astro.props;
+---
+
+<section
+  class=`h-screen w-screen flex flex-col items-center justify-center ${snapPosition}`
+>
+  <article>
+    <header>
+      <h2
+        class="text-xl lg:text-3xl text-balance max-w-4xl text-black dark:text-white"
+      >
+        <span class="pb-8">
+          <a
+            href="https://www.weforum.org/agenda/2023/05/cyber-attacks-on-healthcare-rise-zero-trust/"
+            target="_blank"
+          >
+            <svg
+              class="icon icon-tabler icon-tabler-info-circle"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ff9300"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+              <path d="M12 9h.01"></path>
+              <path d="M11 12h1v4h1"></path>
+            </svg>
+          </a>
+        </span>
+        Los Hospitales, el <span class="font-medium text-orange-400/60"
+          >Tercer Objetivo</span
+        > Más Grande para <span class="font-medium text-orange-400/60"
+          >Ataques Cibernéticos</span
+        >
+      </h2>
+    </header>
+  </article>
+  <main class="py-4">
+    <p
+      class="text-sm text-balance max-w-4xl text-black dark:text-white tracking-widest"
+    >
+      <span class="text-base font-medium text-green-400/60"
+        >Uniendo hospitales, empoderando pacientes.
+      </span><span class="font-medium text-orange-400/60"
+        >Seguridas sin fisuras, acceso controlado</span
+      >. Despídete de las <span class="font-medium text-orange-400/60"
+        >barreras interhospitalarias</span
+      >, da la bienvenida a la revolución de la salud con PatientGuard.
+    </p>
+  </main>
+</section>
