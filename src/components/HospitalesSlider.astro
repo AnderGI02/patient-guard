@@ -1,4 +1,6 @@
 ---
+import { Chart } from "./Chart";
+
 interface Props {
   snapPosition: string;
 }
@@ -8,6 +10,7 @@ const { snapPosition } = Astro.props;
 <section
   class=`h-screen w-screen flex flex-col items-center justify-center ${snapPosition}`
 >
+  <!--
   <article>
     <header>
       <h2
@@ -45,16 +48,8 @@ const { snapPosition } = Astro.props;
     </header>
   </article>
   <main class="py-4">
-    <p
-      class="text-sm text-balance max-w-4xl text-black dark:text-white tracking-widest"
-    >
-      <span class="text-base font-medium text-green-400/60"
-        >Uniendo hospitales, empoderando pacientes.
-      </span><span class="font-medium text-orange-400/60"
-        >Seguridas sin fisuras, acceso controlado</span
-      >. Despídete de las <span class="font-medium text-orange-400/60"
-        >barreras interhospitalarias</span
-      >, da la bienvenida a la revolución de la salud con PatientGuard.
-    </p>
+    <Chart />
   </main>
+   -->
+  <Chart client:load />
 </section>
